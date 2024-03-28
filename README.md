@@ -1,5 +1,5 @@
-# figma-to-robotframework-seleniumlibrary
-
+# Figma-to-Robotframework-Seleniumlibrary
+## *คาดว่าจะส่งงานภายใน วันพฤหัสที่ 4 เมษายน 2567
 | Day | Task 1 | Time Estitmate | Actual | Task 2 | Time Estitmate | Actual |
 |-----------------------|---|---|----|---|---|---|
 | Thursday 28 March 2567 | เขียนแผน figma-to-robotframework-seleniumlibrary  | x | 1 ชั่วโมง |
@@ -10,6 +10,6 @@
 | Thursday 4 April 2567 | เขียน Readme บน Github | 30 นาที | x  |
 | Friday 5 April 2567 |  ลา |  |  |  |
 
-# Source
+# Source 
 
-Miro links :https://miro.com/app/board/uXjVKcyxM6s=/
+Miro links:https://miro.com/app/board/uXjVKcyxM6s=/
