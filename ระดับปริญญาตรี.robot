@@ -10,6 +10,7 @@ Resource    resource.robot
     ตรวจสอบจำนวนแต้มต่อชิ้นที่จะได้รับของ LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle
     เพิ่ม LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle ลงตะกร้า
     Checkout สินค้า
+    ใช้แต้มสะสมเป็นส่วนลดราคาสินค้า 100 แต้ม
     กรอกข้อมูลผู้ติดต่อ
     กรอกที่อยู่จัดส่งสินค้า
     เลือกวิธีจัดส่งสินค้าเป็น Kerry
