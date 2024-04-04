@@ -26,21 +26,21 @@ ${TotalPrice}    ฿2,590.00
 ${DeliveryNumber}    SMAI000245934
 
 *** Keywords ***
-ค้นหาสินค้าด้วย คำค้นหา ${ProdcutsName}
+ค้นหาสินค้าด้วย คำค้นหา LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle
     Open Browser    url=${URL}    browser=${BROWSER}
     Input Text    id:txtSearch    ${ProdcutsName}
     Click Element    id:btnSearch    
 
-ตรวจสอบผลการค้นหา ${ProdcutsName}
+ตรวจสอบผลการค้นหา LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle
     Element Should Contain    id:products_01  ${ProdcutsName}
 
-เลือกดูสินค้า ${ProdcutsName}
+เลือกดูสินค้า LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle
     Click Element    id:products_01
 
-ตรวจสอบจำนวนแต้มต่อชิ้นที่จะได้รับของ ${ProdcutsName}
+ตรวจสอบจำนวนแต้มต่อชิ้นที่จะได้รับของ LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle
     Element Should Contain    id:discount_notif    ${GettingPoints}
 
-เพิ่ม ${ProdcutsName} ลงตะกร้า
+เพิ่ม LEGO Star Wars Ahsoka Tano's T-6 Jedi Shuttle ลงตะกร้า
     Click Element    id:_bg__primary_enabled_large_icon
 
 Checkout สินค้า
@@ -76,7 +76,7 @@ Checkout สินค้า
     Element Should Contain    id:select_kerry_    Kerry
     Click Element    id:btn_cotinue_
 
-ตรวจสอบค่าจัดส่งสินค้าของ Kerry เท่ากันกับ ${ShippingFee} 
+ตรวจสอบค่าจัดส่งสินค้าของ Kerry เท่ากันกับ ฿50.00
     Element Should Contain    id:bg__shipping_fee    ${ShippingFee}
 
 เลือกวิธีชำระเงิน
@@ -88,14 +88,13 @@ Checkout สินค้า
     Input Text    id:_bg__fill_cvv    ${CVV}    
     Input Text    id:_bg__fill_mm_yy   ${MM/YY}    
 
-ตรวจสอบราคารวมที่ต้องชำระเงิน ต้องเท่ากันกับ ${TotalPrice}
+ตรวจสอบราคารวมที่ต้องชำระเงิน ต้องเท่ากันกับ ฿2,590.00
     Element Should Contain    id:_bg__subtotal    ${Subtotal}
     Element Should Contain    id:bg__shipping_fee    ${ShippingFee}
     Element Should Contain    id:_bg__discount    ${DiscountCash}
     Element Should Contain    id:_bg__total    ${TotalPrice}
 
-ชำระเงินสำเร็จ ตรวจสอบเลข Order ${DeliveryNumber}
-    
+ชำระเงินสำเร็จ ตรวจสอบเลข Order SMAI000245934
     #Click Pay
     Click Element    id:__link_7_payment_confirm__btn_pay
 
